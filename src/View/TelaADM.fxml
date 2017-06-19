@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,19 +10,58 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="325.0" prefWidth="380.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.TelaADMController">
+<AnchorPane id="AnchorPane" prefHeight="325.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaADMController">
    <children>
-      <Text layoutX="145.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Main" wrappingWidth="89.15625">
+      <Accordion />
+      <Accordion layoutY="49.0" />
+      <Separator layoutY="46.0" prefHeight="0.0" prefWidth="384.0">
+         <effect>
+            <InnerShadow color="#3b6e72" />
+         </effect>
+      </Separator>
+      <Text layoutX="118.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administração">
          <font>
-            <Font size="37.0" />
+            <Font name="Bank Gothic Light BT" size="19.0" />
          </font>
       </Text>
-      <Button fx:id="btnCadastraFuncionario" layoutX="31.0" layoutY="83.0" mnemonicParsing="false" text="Cadastrar Funcionario" />
-      <Button fx:id="btnCadastraFornecedor" layoutX="208.0" layoutY="83.0" mnemonicParsing="false" text="Cadastrar Fornecedor" />
-      <Button fx:id="btnListaFuncionario" layoutX="34.0" layoutY="208.0" mnemonicParsing="false" text="Lista de Funcionarios" />
-      <Button fx:id="btnListaFornecedores" layoutX="207.0" layoutY="208.0" mnemonicParsing="false" text="Lista de Fornecedores" />
-      <Button fx:id="btnCadastraLixo" layoutX="114.0" layoutY="138.0" mnemonicParsing="false" text="Cadastro de Recebimento" />
-      <Button fx:id="btnListaLixo" layoutX="123.0" layoutY="264.0" mnemonicParsing="false" text="Listagem dos residuos" />
+      <ImageView fitHeight="174.0" fitWidth="182.0" layoutX="209.0" layoutY="156.0" opacity="0.29" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/TheearTH.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="336.0" layoutX="352.0" stroke="BLACK" strokeType="INSIDE" width="3.0">
+         <effect>
+            <InnerShadow color="#3b6e72" />
+         </effect>
+      </Rectangle>
+      <MenuButton layoutX="26.0" layoutY="55.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Controle">
+        <items>
+          <MenuItem fx:id="miFuncionario" mnemonicParsing="false" text="Funcionario" />
+          <MenuItem fx:id="miFornecedor" mnemonicParsing="false" text="Fornecedor" />
+            <MenuItem fx:id="miResiduos" mnemonicParsing="false" text="Residuos" />
+            <MenuItem fx:id="miTransportadora" mnemonicParsing="false" text="Transportadora" />
+        </items>
+      </MenuButton>
+      <Button fx:id="btnInfo" layoutX="283.0" layoutY="55.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="26.0" text="I" />
+      <Text layoutX="26.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Bem Vindo">
+         <font>
+            <Font name="Baskerville Old Face" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="23.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Duvidas, acessar o menu de ajuda">
+         <font>
+            <Font name="Baskerville Old Face" size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="125.0" fitWidth="124.0" layoutX="34.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/garbage-2091534_960_720.png" />
+         </image>
+      </ImageView>
+      <BorderPane layoutX="26.0" layoutY="134.0" prefHeight="138.0" prefWidth="140.0" style="-fx-border-color: black; -fx-border-width: 3; -fx-background-color: transparent;">
+         <effect>
+            <MotionBlur angle="46.05" radius="9.27" />
+         </effect>
+      </BorderPane>
    </children>
 </AnchorPane>

@@ -10,6 +10,7 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuItem;
 
 /**
  * FXML Controller class
@@ -18,23 +19,21 @@ import javafx.scene.control.Button;
  */
 public class TelaADMController implements Initializable {
 
+    
     @FXML
-    private Button btnListaFuncionario;
+    private MenuItem miFornecedor;
 
     @FXML
-    private Button btnCadastraLixo;
+    private MenuItem miTransportadora;
 
     @FXML
-    private Button btnCadastraFornecedor;
+    private MenuItem miResiduos;
 
     @FXML
-    private Button btnListaFornecedores;
+    private MenuItem miFuncionario;
 
     @FXML
-    private Button btnListaLixo;
-
-    @FXML
-    private Button btnCadastraFuncionario;
+    private Button btnInfo;
     
     
     
