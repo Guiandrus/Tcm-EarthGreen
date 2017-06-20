@@ -7,6 +7,8 @@ package Model;
 
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -19,16 +21,16 @@ import javafx.stage.Stage;
  */
 public class TCM extends Application {
     
+    String tela = "Login";
+    
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/View/Login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/View/"+tela+".fxml"));
         
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
-        GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
-        int width = gd.getDisplayMode().getWidth();
-        int height = gd.getDisplayMode().getHeight();
+
         stage.show();
     }
 
@@ -39,4 +41,16 @@ public class TCM extends Application {
         launch(args);
     }
     
-}
+    public void abreTela(String nomeTela){
+        tela = nomeTela;
+        Stage stage = new Stage();
+        try {
+            start(stage);
+        } catch (Exception ex) {
+            Logger.getLogger(TCM.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }
+    }
+    
+

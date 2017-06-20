@@ -10,8 +10,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="325.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaADMController">
+<AnchorPane id="AnchorPane" prefHeight="340.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaADMController">
    <children>
+      <ImageView fitHeight="351.0" fitWidth="343.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/novo.jpg" />
+         </image>
+      </ImageView>
       <Accordion />
       <Accordion layoutY="49.0" />
       <Separator layoutY="46.0" prefHeight="0.0" prefWidth="384.0">
@@ -19,49 +24,48 @@
             <InnerShadow color="#3b6e72" />
          </effect>
       </Separator>
-      <Text layoutX="118.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administração">
+      <Text layoutX="90.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administração">
          <font>
-            <Font name="Bank Gothic Light BT" size="19.0" />
+            <Font name="Bank Gothic Light BT" size="24.0" />
          </font>
+         <effect>
+            <InnerShadow choke="0.1" color="#36636b" radius="4.75" width="0.0" />
+         </effect>
       </Text>
-      <ImageView fitHeight="174.0" fitWidth="182.0" layoutX="209.0" layoutY="156.0" opacity="0.29" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../Desktop/TheearTH.jpg" />
-         </image>
-      </ImageView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="336.0" layoutX="352.0" stroke="BLACK" strokeType="INSIDE" width="3.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="342.0" layoutX="342.0" stroke="BLACK" strokeType="INSIDE" width="2.0">
          <effect>
             <InnerShadow color="#3b6e72" />
          </effect>
       </Rectangle>
-      <MenuButton layoutX="26.0" layoutY="55.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Controle">
+      <MenuButton layoutX="31.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" text="            Controle">
         <items>
           <MenuItem fx:id="miFuncionario" mnemonicParsing="false" text="Funcionario" />
           <MenuItem fx:id="miFornecedor" mnemonicParsing="false" text="Fornecedor" />
             <MenuItem fx:id="miResiduos" mnemonicParsing="false" text="Residuos" />
             <MenuItem fx:id="miTransportadora" mnemonicParsing="false" text="Transportadora" />
         </items>
+         <effect>
+            <InnerShadow color="#576e86" />
+         </effect>
       </MenuButton>
-      <Button fx:id="btnInfo" layoutX="283.0" layoutY="55.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="26.0" text="I" />
-      <Text layoutX="26.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Bem Vindo">
-         <font>
-            <Font name="Baskerville Old Face" size="16.0" />
-         </font>
-      </Text>
-      <Text layoutX="23.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Duvidas, acessar o menu de ajuda">
-         <font>
-            <Font name="Baskerville Old Face" size="16.0" />
-         </font>
-      </Text>
-      <ImageView fitHeight="125.0" fitWidth="124.0" layoutX="34.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+      <Button fx:id="btnInfo" layoutX="352.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" text="?">
+         <effect>
+            <InnerShadow color="#576e86" />
+         </effect></Button>
+      <ImageView fitHeight="100.0" fitWidth="128.0" layoutX="214.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Desktop/garbage-2091534_960_720.png" />
+            <Image url="@../Imagens/Sem_titulo.png" />
          </image>
       </ImageView>
-      <BorderPane layoutX="26.0" layoutY="134.0" prefHeight="138.0" prefWidth="140.0" style="-fx-border-color: black; -fx-border-width: 3; -fx-background-color: transparent;">
-         <effect>
-            <MotionBlur angle="46.05" radius="9.27" />
-         </effect>
-      </BorderPane>
+      <Text layoutX="26.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bem vindo ao TheearTH">
+         <font>
+            <Font name="Bell MT" size="19.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="124.0" fitWidth="127.0" layoutX="264.0" layoutY="218.0" opacity="0.23" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/TheearTH.jpg" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

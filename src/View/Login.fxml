@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,16 +10,62 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="220.0" prefWidth="251.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.LoginController">
+<AnchorPane id="AnchorPane" prefHeight="220.0" prefWidth="251.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
    <children>
       <Text layoutX="88.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="75.443359375">
          <font>
-            <Font size="30.0" />
+            <Font name="Cambria" size="30.0" />
          </font>
       </Text>
-      <TextField fx:id="tfLogin_login" layoutX="51.0" layoutY="75.0" promptText="Digite seu Login" />
-      <TextField fx:id="tfSenha_login" layoutX="51.0" layoutY="119.0" promptText="Digite sua Senha" />
-      <Button fx:id="btn_Logar" layoutX="100.0" layoutY="168.0" mnemonicParsing="false" text="Logar" />
+      <Separator layoutX="14.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="232.0" prefWidth="31.0">
+         <effect>
+            <InnerShadow color="#255143" />
+         </effect>
+      </Separator>
+      <ImageView fitHeight="136.0" fitWidth="149.0" layoutY="95.0" opacity="0.26" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/TheearTH.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="2.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" width="251.0">
+         <effect>
+            <InnerShadow color="#46836f" />
+         </effect>
+      </Rectangle>
+      <ImageView fitHeight="67.0" fitWidth="15.0" layoutX="174.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/linhasOK.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="93.0" fitWidth="15.0" layoutX="207.0" layoutY="72.0" opacity="0.48" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/flechaOK.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="211.0" fitWidth="15.0" layoutX="60.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/linhasOK.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="93.0" fitWidth="15.0" layoutX="207.0" layoutY="116.0" opacity="0.48" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/flechaOK.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfLogin_login" layoutX="51.0" layoutY="75.0" promptText="Digite seu Login" style="-fx-background-radius: 7;">
+         <effect>
+            <InnerShadow color="#3a5478" />
+         </effect>
+      </TextField>
+      <Button fx:id="btn_Logar" layoutX="96.0" layoutY="178.0" mnemonicParsing="false" prefHeight="2.0" prefWidth="61.0" style="-fx-background-color: #89D127; -fx-border-color: black;" text="Logar">
+         <effect>
+            <InnerShadow color="#3a5478" />
+         </effect>
+      </Button>
+      <PasswordField fx:id="tfSenha_senha" layoutX="51.0" layoutY="119.0" promptText="Digite sua senha" style="-fx-background-radius: 7;">
+         <effect>
+            <InnerShadow color="#3a5478" />
+         </effect>
+      </PasswordField>
    </children>
 </AnchorPane>

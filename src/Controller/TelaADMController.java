@@ -5,6 +5,7 @@
  */
 package Controller;
 
+import Model.TCM;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -34,13 +35,27 @@ public class TelaADMController implements Initializable {
 
     @FXML
     private Button btnInfo;
+    TCM tcm = new TCM();
     
-    
+    public void acaoDosBotoes(){
+         miFornecedor.setOnAction(event ->{
+             tcm.abreTela("MostrarFornecedor");
+         });
+         miTransportadora.setOnAction(event ->{
+             tcm.abreTela("Mos traTransportador");
+         });
+         miFuncionario.setOnAction(event ->{
+             tcm.abreTela("MostraFuncionario");
+         });
+         miResiduos.setOnAction(event ->{
+             tcm.abreTela("MostraLixo");
+         });
+    }
     
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        acaoDosBotoes();
     }    
     
 }

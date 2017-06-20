@@ -12,6 +12,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 
 /**
@@ -37,9 +38,15 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private TextField tfNome;
+    
+    @FXML
+    private RadioButton radioFuncionario;
+    
+    @FXML
+    private RadioButton radioAdm;
+    
     @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+    public void initialize(URL url, ResourceBundle rb) {// TODO
     }    
     
 }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="357.0" prefWidth="424.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="View.CadastraTransportadorController">
+   <children>
+      <Text layoutX="77.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Transportadora">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tfNomeTransportadora" layoutX="137.0" layoutY="126.0" promptText="Nome da Transportadora" />
+      <TextField fx:id="tfCnpj" layoutX="137.0" layoutY="205.0" promptText="Cnpj da Empresa" />
+      <ComboBox fx:id="comboTipoMaterial" layoutX="138.0" layoutY="242.0" prefWidth="150.0" promptText="Tipo de Material" />
+      <Button fx:id="btnCadastrar" layoutX="178.0" layoutY="314.0" mnemonicParsing="false" text="Cadastrar" />
+      <TextField fx:id="tfContato" layoutX="137.0" layoutY="166.0" promptText="Contato" />
+   </children>
+</AnchorPane>

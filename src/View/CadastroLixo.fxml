@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,17 +8,19 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="444.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CadastroLixoController">
+<AnchorPane id="AnchorPane" prefHeight="304.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CadastroLixoController">
    <children>
-      <Text layoutX="80.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Lixo">
+      <Text layoutX="16.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CADASTRO DE RESÍDUOS" wrappingWidth="296.201171875">
          <font>
-            <Font size="23.0" />
+            <Font name="Bank Gothic Medium BT" size="20.0" />
          </font>
+         <effect>
+            <InnerShadow color="#6cbbdd" />
+         </effect>
       </Text>
-      <ComboBox fx:id="cmbFornecedor" layoutX="90.0" layoutY="133.0" prefWidth="150.0" promptText="Escolha o Fornecedor" />
-      <ComboBox fx:id="cmbLixo" layoutX="90.0" layoutY="182.0" prefWidth="150.0" promptText="Tipo do lixo" />
-      <TextField fx:id="tfQuantidade" layoutX="90.0" layoutY="229.0" prefHeight="25.0" prefWidth="150.0" promptText="Qtd. em toneladas" />
-      <Button fx:id="btnCadastrar" layoutX="124.0" layoutY="334.0" mnemonicParsing="false" text="Cadastrar" />
-      <TextField fx:id="tfIDLixo" layoutX="91.0" layoutY="272.0" promptText="ID de Entrega" />
+      <ComboBox fx:id="cmbLixo" layoutX="91.0" layoutY="98.0" prefWidth="150.0" promptText="Tipo do lixo" />
+      <TextField fx:id="tfQuantidade" layoutX="89.0" layoutY="152.0" prefHeight="25.0" prefWidth="150.0" promptText="Qtd. em toneladas" style="-fx-border-color: black;" />
+      <Button fx:id="btnCadastrar" layoutX="130.0" layoutY="247.0" mnemonicParsing="false" style="-fx-border-color: black; -fx-border-radius: 7; -fx-background-radius: 7;" text="Cadastrar" />
+      <TextField fx:id="tfIDLixo" layoutX="89.0" layoutY="202.0" promptText="Código do Residuo" style="-fx-border-color: black;" />
    </children>
 </AnchorPane>

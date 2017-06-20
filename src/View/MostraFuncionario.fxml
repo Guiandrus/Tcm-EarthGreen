@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,16 +9,19 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="446.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MostraFuncionarioController">
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MostraFuncionarioController">
    <children>
-      <Text fx:id="Funcionarios" layoutX="153.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionarios">
+      <Text fx:id="Funcionarios" layoutX="167.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionarios" wrappingWidth="261.71875">
          <font>
-            <Font size="32.0" />
+            <Font name="Bank Gothic Medium BT" size="32.0" />
          </font>
+         <effect>
+            <InnerShadow color="#58b29a" />
+         </effect>
       </Text>
-      <TableView layoutY="57.0" prefHeight="388.0" prefWidth="485.0">
+      <TableView layoutX="56.0" layoutY="35.0" prefHeight="310.0" prefWidth="485.0" style="-fx-border-color: black; -fx-border-width: 2;">
         <columns>
-          <TableColumn fx:id="tvNome" prefWidth="101.0" text="Nome" />
+          <TableColumn fx:id="tvNome" prefWidth="101.0" style="-fx-background-color: #89D127;" text="Nome" />
           <TableColumn fx:id="tvEmail" prefWidth="97.0" text="Email" />
             <TableColumn fx:id="tvLogin" prefWidth="94.0" text="Login" />
             <TableColumn fx:id="tvSenha" prefWidth="94.0" text="Senha" />
@@ -31,5 +36,10 @@
             </ContextMenu>
          </contextMenu>
       </TableView>
+      <ImageView fitHeight="78.0" fitWidth="78.0" layoutX="59.0" layoutY="265.0" opacity="0.22" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/TheearTH.jpg" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
