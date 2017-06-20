@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MostraLixoController">
+   <children>
+      <Text layoutX="149.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Historico lixo">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <TableView layoutY="81.0" prefHeight="398.0" prefWidth="507.0">
+        <columns>
+          <TableColumn fx:id="cmbID_Entrega" prefWidth="86.0" text="ID_Entrega" />
+          <TableColumn fx:id="cmbEMpresa" prefWidth="151.0" text="Empresa" />
+            <TableColumn fx:id="cmmTipoLixo" prefWidth="143.0" text="Tipo do Lixo" />
+            <TableColumn fx:id="cmbQTD" prefWidth="126.0" text="Qtd. Lixo" />
+        </columns>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem fx:id="ctxtMEditar" mnemonicParsing="false" text="Editar" />
+                  <MenuItem fx:id="ctxtMExcluir" mnemonicParsing="false" text="Excluir" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+   </children>
+</AnchorPane>

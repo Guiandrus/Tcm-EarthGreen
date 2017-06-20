@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="411.0" prefWidth="377.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MostrarFornecedorController">
+   <children>
+      <Text layoutX="101.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fornecedores" wrappingWidth="174.583984375">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <TableView layoutY="57.0" prefHeight="355.0" prefWidth="377.0">
+        <columns>
+          <TableColumn fx:id="tvNome" prefWidth="135.0" text="Nome" />
+          <TableColumn fx:id="tvTelefone" prefWidth="117.0" text="Telefone" />
+            <TableColumn fx:id="tvEmail" prefWidth="124.0" text="Email" />
+        </columns>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem fx:id="ctxtMEditar" mnemonicParsing="false" text="Editar" />
+                  <MenuItem fx:id="ctxtMExcluir" mnemonicParsing="false" text="Excluir" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+   </children>
+</AnchorPane>
