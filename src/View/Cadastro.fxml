@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="424.0" prefWidth="318.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tcm.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="424.0" prefWidth="318.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLDocumentController">
    <children>
       <TextField fx:id="tfNome" layoutX="85.0" layoutY="160.0" promptText="Digite o Nome" />
       <TextField fx:id="tfSenha" layoutX="85.0" layoutY="208.0" promptText="Digite a Senha" />

@@ -5,7 +5,7 @@
  */
 package Controller;
 
-import Model.TCM;
+import View.manage.TCM;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -21,6 +21,9 @@ import javafx.scene.control.MenuItem;
 public class TelaADMController implements Initializable {
 
     
+    @FXML
+    private Button btnCadastro;
+
     @FXML
     private MenuItem miFornecedor;
 
@@ -49,6 +52,12 @@ public class TelaADMController implements Initializable {
          });
          miResiduos.setOnAction(event ->{
              tcm.abreTela("MostraLixo");
+         });
+         btnCadastro.setOnAction(event ->{
+             tcm.abreTela("Cadastro");
+         });
+         btnInfo.setOnAction(event ->{
+         
          });
     }
     

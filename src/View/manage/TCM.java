@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Model;
+package View.manage;
 
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;

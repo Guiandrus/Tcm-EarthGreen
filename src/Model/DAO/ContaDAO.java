@@ -24,11 +24,12 @@ import javafx.collections.ObservableList;
  */
 public class ContaDAO {
     
-    public List<Conta> select(){
+    
+    public ObservableList<Conta> select(){
         
-        List<Conta> contas = new ArrayList();
+        ObservableList<Conta> contas = FXCollections.observableArrayList();
         
-        String sql = "SELECT * FROM usuario";
+        String sql = "SELECT * FROM conta";
         
         
         ConnectionFactory con = new ConnectionFactory();
@@ -43,13 +44,15 @@ public class ContaDAO {
                 
                 Conta conta = new Conta();
                 
-                conta.setId(rs.getInt("id"));
+                
                 conta.setEmail(rs.getString("email"));
                 conta.setLogin(rs.getString("login"));
                 conta.setSenha(rs.getString("senha"));
                 conta.setNome(rs.getString("nome"));
+                conta.setTipoConta(rs.getString("tipoConta"));
                 
                 contas.add(conta);
+                
                 
             }
             
@@ -65,7 +68,7 @@ public class ContaDAO {
     
     public void insert (Conta conta){
     
-        String sql = "INSERT INTO usuario (nome, email, login, senha)" +
+        String sql = "INSERT INTO conta (nome, email, login, senha)" +
                      "VALUES (?, ?, ?, ?)";
         
         ConnectionFactory con = new ConnectionFactory();
@@ -90,7 +93,7 @@ public class ContaDAO {
     }
         public void delete (Conta conta){
             
-        String sql = "DELETE FROM usuario WHERE ID = ?";
+        String sql = "DELETE FROM conta WHERE ID = ?";
         
         ConnectionFactory con = new ConnectionFactory();
         
@@ -110,7 +113,7 @@ public class ContaDAO {
         
         public void update (Conta conta){
             
-            String sql = "UPDATE usuario SET nome = ?, login = ?, email = ?, senha = ? FROM usuario where ID = ?";
+            String sql = "UPDATE conta SET nome = ?, login = ?, email = ?, senha = ? FROM usuario where ID = ?";
             
             ConnectionFactory con = new ConnectionFactory();
             
@@ -140,11 +143,10 @@ public class ContaDAO {
         
     
     static int contaLogada;
-    TelaADMController telaADM = new TelaADMController();
     private static ObservableList<Conta> listaDeContas = FXCollections.observableArrayList();
     
     
-    public static ObservableList<Conta> getConta(){
+    public ObservableList<Conta> getConta(){
         return listaDeContas;
     }
     

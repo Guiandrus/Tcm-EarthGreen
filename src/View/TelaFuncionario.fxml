@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="325.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaADMController">
+<AnchorPane id="AnchorPane" prefHeight="325.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaFuncionarioController">
    <children>
       <Text layoutX="145.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Main" wrappingWidth="89.15625">
          <font>

@@ -14,7 +14,7 @@ import java.sql.DriverManager;
  */
 public class ConnectionFactory {
 
-    private String bancoDeDados = "dataBase";
+    private String bancoDeDados = "TCM";
     private String usuario = "postgres";
     private String senha = "aluno";
     
