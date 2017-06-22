@@ -5,6 +5,7 @@
  */
 package Controller;
 
+import Model.PDF;
 import View.manage.TCM;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -22,22 +23,34 @@ public class TelaADMController implements Initializable {
 
     
     @FXML
-    private Button btnCadastro;
-
-    @FXML
     private MenuItem miFornecedor;
 
     @FXML
     private MenuItem miTransportadora;
 
     @FXML
+    private MenuItem cadContas;
+
+    @FXML
+    private MenuItem cadTransportadora;
+
+    @FXML
+    private MenuItem cadResiduo;
+
+    @FXML
     private MenuItem miResiduos;
+
+    @FXML
+    private MenuItem cadFornecedor;
 
     @FXML
     private MenuItem miFuncionario;
 
     @FXML
     private Button btnInfo;
+
+    PDF pdf = new PDF();
+    
     TCM tcm = new TCM();
     
     public void acaoDosBotoes(){
@@ -53,18 +66,30 @@ public class TelaADMController implements Initializable {
          miResiduos.setOnAction(event ->{
              tcm.abreTela("MostraLixo");
          });
-         btnCadastro.setOnAction(event ->{
+         cadContas.setOnAction(event ->{
              tcm.abreTela("Cadastro");
          });
+         cadFornecedor.setOnAction(event ->{
+             tcm.abreTela("CadastroFornecedor");
+         });
+         cadResiduo.setOnAction(event ->{
+             tcm.abreTela("CadastroLixo");
+         });
+         cadTransportadora.setOnAction(event ->{
+             tcm.abreTela("CadastraTransportador");
+         });
          btnInfo.setOnAction(event ->{
-         
+         pdf.abrePDF();
          });
     }
     
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
         acaoDosBotoes();
+        pdf.criaPDF();
+        
     }    
     
 }

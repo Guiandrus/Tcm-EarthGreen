@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.*?>
 
 
-<AnchorPane id="AnchorPane" prefHeight="357.0" prefWidth="424.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="View.CadastraTransportadorController">
+<AnchorPane id="AnchorPane" prefHeight="357.0" prefWidth="424.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.CadastraTransportadorController">
    <children>
       <Text layoutX="77.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Transportadora">
          <font>

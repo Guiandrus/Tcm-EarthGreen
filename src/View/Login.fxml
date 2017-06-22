@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.effect.*?>
@@ -10,59 +11,83 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="220.0" prefWidth="251.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+<AnchorPane id="AnchorPane" prefHeight="293.0" prefWidth="371.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
    <children>
-      <Text layoutX="88.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="75.443359375">
+      <ImageView fitHeight="356.0" fitWidth="376.0" opacity="0.51" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/21317259-Fondo-tecnol-gico-abstracto-con-diversos-elementos-tecnol-gicos-Foto-de-archivo.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="124.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TheearTH" wrappingWidth="149.0">
          <font>
             <Font name="Cambria" size="30.0" />
          </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.9904761904761905" startX="0.7380952380952381" startY="0.1952380952380952">
+               <stops>
+                  <Stop color="#3f4e6b" />
+                  <Stop color="#2ad36b" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
       </Text>
-      <Separator layoutX="14.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="232.0" prefWidth="31.0">
+      <Separator layoutX="14.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="291.0" prefWidth="31.0">
          <effect>
             <InnerShadow color="#255143" />
          </effect>
       </Separator>
-      <ImageView fitHeight="136.0" fitWidth="149.0" layoutY="95.0" opacity="0.26" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="113.0" fitWidth="113.0" layoutX="264.0" layoutY="178.0" opacity="0.26" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Imagens/TheearTH.jpg" />
          </image>
       </ImageView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="2.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" width="251.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="2.0" layoutX="1.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="376.0">
          <effect>
             <InnerShadow color="#46836f" />
          </effect>
       </Rectangle>
-      <ImageView fitHeight="67.0" fitWidth="15.0" layoutX="174.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="67.0" fitWidth="15.0" layoutX="273.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Imagens/linhasOK.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="93.0" fitWidth="15.0" layoutX="207.0" layoutY="72.0" opacity="0.48" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="93.0" fitWidth="15.0" layoutX="280.0" layoutY="113.0" opacity="0.48" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Imagens/flechaOK.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="211.0" fitWidth="15.0" layoutX="60.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="211.0" fitWidth="15.0" layoutX="89.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Imagens/linhasOK.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="93.0" fitWidth="15.0" layoutX="207.0" layoutY="116.0" opacity="0.48" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="93.0" fitWidth="15.0" layoutX="280.0" layoutY="160.0" opacity="0.48" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Imagens/flechaOK.jpg" />
          </image>
       </ImageView>
-      <TextField fx:id="tfLogin_login" layoutX="51.0" layoutY="75.0" promptText="Digite seu Login" style="-fx-background-radius: 7;">
+      <TextField fx:id="tfLogin_login" layoutX="115.0" layoutY="115.0" promptText="Digite seu Login" style="-fx-background-radius: 7;">
          <effect>
             <InnerShadow color="#3a5478" />
          </effect>
       </TextField>
-      <Button fx:id="btn_Logar" layoutX="96.0" layoutY="178.0" mnemonicParsing="false" prefHeight="2.0" prefWidth="61.0" style="-fx-background-color: #89D127; -fx-border-color: black;" text="Logar">
+      <Button fx:id="btn_Logar" layoutX="158.0" layoutY="210.0" mnemonicParsing="false" prefHeight="2.0" prefWidth="61.0" style="-fx-background-color: #62aba7; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: black;" text="Logar">
          <effect>
-            <InnerShadow color="#3a5478" />
+            <InnerShadow color="#62aba7" />
          </effect>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.9333333333333333" startY="0.6904761904761905">
+               <stops>
+                  <Stop color="#3f4e6b" />
+                  <Stop color="#62aba7" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Bank Gothic Medium BT" size="12.0" />
+         </font>
       </Button>
-      <PasswordField fx:id="tfSenha_senha" layoutX="51.0" layoutY="119.0" promptText="Digite sua senha" style="-fx-background-radius: 7;">
+      <PasswordField fx:id="tfSenha_senha" layoutX="115.0" layoutY="162.0" promptText="Digite sua senha" style="-fx-background-radius: 7;">
          <effect>
             <InnerShadow color="#3a5478" />
          </effect>

@@ -68,8 +68,8 @@ public class ContaDAO {
     
     public void insert (Conta conta){
     
-        String sql = "INSERT INTO conta (nome, email, login, senha)" +
-                     "VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO conta (nome, email, login, senha, tipoConta)" +
+                     "VALUES (?, ?, ?, ?, ?)";
         
         ConnectionFactory con = new ConnectionFactory();
         
@@ -82,6 +82,7 @@ public class ContaDAO {
             stmt.setString(2, conta.getEmail());
             stmt.setString(3, conta.getLogin());
             stmt.setString(4, conta.getSenha());
+            stmt.setString(5, conta.getTipoConta());
             
             stmt.execute();
             
