@@ -11,6 +11,7 @@ package Model;
  */
 public class Lixo {
     
+    int id;
     String tipo;
     double toneladas;
     

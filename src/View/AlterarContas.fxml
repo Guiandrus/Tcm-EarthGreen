@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="377.0" prefWidth="383.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.AlterarContasController">
+   <children>
+      <Label layoutX="151.0" layoutY="32.0" prefHeight="17.0" prefWidth="82.0" text="Alteração">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfNome" layoutX="118.0" layoutY="103.0" promptText="Nome" />
+      <TextField fx:id="tfEmail" layoutX="118.0" layoutY="160.0" promptText="Email" />
+      <TextField fx:id="tfLogin" layoutX="118.0" layoutY="214.0" promptText="Login" />
+      <TextField fx:id="tfSenha" layoutX="118.0" layoutY="261.0" promptText="Senha" />
+      <Button fx:id="btnAlterar" layoutX="167.0" layoutY="316.0" mnemonicParsing="false" text="Alterar" />
+   </children>
+</AnchorPane>

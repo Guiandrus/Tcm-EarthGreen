@@ -11,6 +11,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuButton;
+import javafx.scene.control.MenuItem;
 
 /**
  * FXML Controller class
@@ -21,16 +22,22 @@ public class TelaFuncionarioController implements Initializable {
 
     
     @FXML
-    private MenuButton comboRecebimento;
+    private MenuItem miCadastrarFornecedor;
 
     @FXML
-    private MenuButton comboResiduos;
+    private MenuItem miListagemRecebimento;
 
     @FXML
-    private MenuButton comboFornecedor;
-    
-    
-    
+    private MenuItem miListagemResiduos;
+
+    @FXML
+    private MenuItem miCadastrarRecebimento;
+
+    @FXML
+    private MenuItem miCadastrarResiduos;
+
+    @FXML
+    private MenuItem miListarFornecedor;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {

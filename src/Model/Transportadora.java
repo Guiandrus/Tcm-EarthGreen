@@ -9,12 +9,14 @@ package Model;
  *
  * @author Aluno
  */
-public class Fornecedor {
+public class Transportadora {
     
-    int id;
     String nome;
     String telefone;
-    String empresa;
+    String email;
+    String cnpj;
+    String tipoDeLixo;
+    int id;
 
     public int getId() {
         return id;
@@ -40,12 +42,31 @@ public class Fornecedor {
         this.telefone = telefone;
     }
 
-    public String getEmpresa() {
-        return empresa;
+    public String getEmail() {
+        return email;
     }
 
-    public void setEmpresa(String empresa) {
-        this.empresa = empresa;
+    public void setEmail(String email) {
+        this.email = email;
     }
+
+    public String getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public String getTipoDeLixo() {
+        return tipoDeLixo;
+    }
+
+    public void setTipoDeLixo(String tipoDeLixo) {
+        this.tipoDeLixo = tipoDeLixo;
+    }
+    
+    
+    
     
 }

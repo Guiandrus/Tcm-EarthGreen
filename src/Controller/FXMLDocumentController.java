@@ -18,6 +18,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.ImageView;
 import javax.swing.ButtonGroup;
 
 /**
@@ -27,13 +28,16 @@ import javax.swing.ButtonGroup;
 public class FXMLDocumentController implements Initializable {
   
    @FXML
-    private TextField tfLogin;
-    
-   @FXML
     private TextField tfSenha;
 
     @FXML
-    private TextField tfSalario;
+    private Button btnEscolheImagem;
+
+    @FXML
+    private TextField tfLogin;
+
+    @FXML
+    private RadioButton radioFuncionario;
 
     @FXML
     private TextField tfEmail;
@@ -42,13 +46,13 @@ public class FXMLDocumentController implements Initializable {
     private Button BtnCadastrar;
 
     @FXML
-    private TextField tfNome;
-    
-    @FXML
-    private RadioButton radioFuncionario;
-    
-    @FXML
     private RadioButton radioAdm;
+
+    @FXML
+    private ImageView Imagem;
+
+    @FXML
+    private TextField tfNome;
     
     boolean validacao;
     

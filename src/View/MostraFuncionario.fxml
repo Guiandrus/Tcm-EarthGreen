@@ -9,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MostraFuncionarioController">
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="711.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MostraFuncionarioController">
    <children>
       <Text fx:id="Funcionarios" layoutX="167.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionarios" wrappingWidth="261.71875">
          <font>
@@ -19,27 +19,22 @@
             <InnerShadow color="#58b29a" />
          </effect>
       </Text>
-      <TableView layoutX="56.0" layoutY="35.0" prefHeight="310.0" prefWidth="485.0" style="-fx-border-color: black; -fx-border-width: 2;">
+      <TableView fx:id="Tabela" layoutX="56.0" layoutY="35.0" prefHeight="310.0" prefWidth="485.0" style="-fx-border-color: black; -fx-border-width: 2;">
         <columns>
           <TableColumn fx:id="tvNome" prefWidth="101.0" style="-fx-background-color: #89D127;" text="Nome" />
           <TableColumn fx:id="tvEmail" prefWidth="97.0" text="Email" />
             <TableColumn fx:id="tvLogin" prefWidth="94.0" text="Login" />
             <TableColumn fx:id="tvSenha" prefWidth="94.0" text="Senha" />
-            <TableColumn fx:id="tvSalario" prefWidth="98.0" text="Salario" />
+            <TableColumn fx:id="tvtipoConta" prefWidth="98.0" text="Tipo Da Conta" />
         </columns>
-         <contextMenu>
-            <ContextMenu>
-              <items>
-                <MenuItem fx:id="ctxtMEditar" mnemonicParsing="false" text="Editar" />
-                  <MenuItem fx:id="ctxtMExcluir" mnemonicParsing="false" text="Excluir" />
-              </items>
-            </ContextMenu>
-         </contextMenu>
       </TableView>
       <ImageView fitHeight="78.0" fitWidth="78.0" layoutX="59.0" layoutY="265.0" opacity="0.22" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Desktop/TheearTH.jpg" />
+            <Image url="@../Imagens/TheearTH.jpg" />
          </image>
       </ImageView>
+      <Button fx:id="btnExcluir" layoutX="591.0" layoutY="121.0" mnemonicParsing="false" text="Excluir" />
+      <Button fx:id="btnAtualizar" layoutX="589.0" layoutY="225.0" mnemonicParsing="false" text="Atualizar" />
+      <Button fx:id="btnAlterar" layoutX="590.0" layoutY="173.0" mnemonicParsing="false" text="Alterar" />
    </children>
 </AnchorPane>

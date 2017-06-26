@@ -5,14 +5,12 @@
  */
 package Model.DAO;
 
-import Controller.TelaADMController;
 import Model.Conta;
+import Model.Transportadora;
 import Model.jbdc.ConnectionFactory;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.collections.FXCollections;
@@ -22,14 +20,15 @@ import javafx.collections.ObservableList;
  *
  * @author Aluno
  */
-public class ContaDAO {
+public class TransportadorDAO {
     
+        
     
-    public ObservableList<Conta> select(){
+    public ObservableList<Transportadora> select(){
         
-        ObservableList<Conta> contas = FXCollections.observableArrayList();
+        ObservableList<Transportadora> transportadora = FXCollections.observableArrayList();
         
-        String sql = "SELECT * FROM conta";
+        String sql = "SELECT * FROM transportadora";
         
         
         ConnectionFactory con = new ConnectionFactory();
@@ -42,16 +41,16 @@ public class ContaDAO {
             
             while(rs.next()){
                 
-                Conta conta = new Conta();
+                Transportadora transporte = new Transportadora();
                 
                 
-                conta.setEmail(rs.getString("email"));
-                conta.setLogin(rs.getString("login"));
-                conta.setSenha(rs.getString("senha"));
-                conta.setNome(rs.getString("nome"));
-                conta.setTipoConta(rs.getString("tipoConta"));
+                transporte.setEmail(rs.getString("email"));
+                transporte.setCnpj(rs.getString("cnpj"));
+                transporte.setTelefone(rs.getString("telefone"));
+                transporte.setNome(rs.getString("nome"));
+                transporte.setTipoDeLixo(rs.getString("tipoDeLixo"));
                 
-                contas.add(conta);
+                transportadora.add(transporte);
                 
                 
             }
@@ -62,13 +61,13 @@ public class ContaDAO {
             
         }
         
-        return contas;
+        return transportadora;
         
     }
     
-    public void insert (Conta conta){
+    public void insert (Transportadora transportadora){
     
-        String sql = "INSERT INTO conta (nome, email, login, senha, tipoConta)" +
+        String sql = "INSERT INTO transportadora (nome, email, cnpj, telefone, tipoDeLixo)" +
                      "VALUES (?, ?, ?, ?, ?)";
         
         ConnectionFactory con = new ConnectionFactory();
@@ -78,11 +77,11 @@ public class ContaDAO {
             
             stmt = con.getConnection().prepareStatement(sql);
             
-            stmt.setString(1, conta.getNome());
-            stmt.setString(2, conta.getEmail());
-            stmt.setString(3, conta.getLogin());
-            stmt.setString(4, conta.getSenha());
-            stmt.setString(5, conta.getTipoConta());
+            stmt.setString(1, transportadora.getNome());
+            stmt.setString(2, transportadora.getEmail());
+            stmt.setString(3, transportadora.getCnpj());
+            stmt.setString(4, transportadora.getTelefone());
+            stmt.setString(5, transportadora.getTipoDeLixo());
             
             stmt.execute();
             
@@ -92,9 +91,9 @@ public class ContaDAO {
         }
         
     }
-        public void delete (Conta conta){
+        public void delete (Transportadora transportadora){
             
-        String sql = "DELETE FROM conta WHERE login = ?";
+        String sql = "DELETE FROM conta WHERE ID = ?";
         
         ConnectionFactory con = new ConnectionFactory();
         
@@ -104,20 +103,17 @@ public class ContaDAO {
                 
                 stmt = con.getConnection().prepareStatement(sql);
                 
-                stmt.setString(1, conta.getLogin());
+                stmt.setInt(1, transportadora.getId());
                 
-                stmt.execute();
-                
-                stmt.close();
             } catch (Exception e) {
                 
             }
             
         }
         
-        public void update (Conta conta){
+        public void update (Transportadora transportadora){
             
-            String sql = "UPDATE conta SET nome = ?, login = ?, email = ?, senha = ? FROM conta where ID = ?";
+            String sql = "UPDATE conta SET nome = ?, cnpj = ?, email = ?, telefone = ?, tipoDeLixo = ? FROM usuario where ID = ?";
             
             ConnectionFactory con = new ConnectionFactory();
             
@@ -127,11 +123,12 @@ public class ContaDAO {
                 
             stmt = con.getConnection().prepareStatement(sql);
             
-            stmt.setString(1, conta.getNome());
-            stmt.setString(3, conta.getEmail());
-            stmt.setString(2, conta.getLogin());
-            stmt.setString(4, conta.getSenha());
-            stmt.setInt(5, conta.getId());
+            stmt.setString(1, transportadora.getNome());
+            stmt.setString(3, transportadora.getCnpj());
+            stmt.setString(2, transportadora.getEmail());
+            stmt.setString(4, transportadora.getTelefone());
+            stmt.setString(5, transportadora.getTipoDeLixo());
+            stmt.setInt(6, transportadora.getId());
             
             stmt.execute();
             
@@ -147,15 +144,16 @@ public class ContaDAO {
         
     
     static int contaLogada;
-    private static ObservableList<Conta> listaDeContas = FXCollections.observableArrayList();
+    private static ObservableList<Transportadora> listaDeTransportadoras = FXCollections.observableArrayList();
     
     
-    public ObservableList<Conta> getConta(){
-        return listaDeContas;
+    public ObservableList<Transportadora> getConta(){
+        return listaDeTransportadoras;
     }
     
     public int contaLogada(){
         int contaLogadaAgora = contaLogada;
         return contaLogadaAgora;
     }
+    
 }
