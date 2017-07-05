@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="355.0" prefWidth="363.0" style="-fx-background-color: #fffbf8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CadastroLixoController">
+   <children>
+      <ImageView fitHeight="364.0" fitWidth="374.0" layoutX="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/abstratocinza.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b7bfc6" height="127.0" layoutX="14.0" layoutY="113.0" opacity="0.18" stroke="BLACK" strokeType="INSIDE" width="164.0" />
+      <Text layoutX="31.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CADASTRO DE RESÍDUOS" wrappingWidth="350.201171875">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="19.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#2c61a1" />
+         </effect>
+      </Text>
+      <TextField fx:id="tfQuantidade" layoutX="21.0" layoutY="162.0" prefHeight="25.0" prefWidth="150.0" promptText="Qtd. em toneladas" style="-fx-background-radius: 7; -fx-border-radius: 7;">
+         <effect>
+            <InnerShadow color="#6f6c6b" />
+         </effect></TextField>
+      <Button fx:id="btnCadastrar" layoutX="136.0" layoutY="298.0" mnemonicParsing="false" style="-fx-border-radius: 7; -fx-background-color: #1d2845; -fx-border-color: ; -fx-background-radius: 7;" text="Cadastrar" textFill="WHITE">
+         <effect>
+            <InnerShadow color="WHITE" />
+         </effect></Button>
+      <TextField fx:id="tfNome" layoutX="21.0" layoutY="124.0" promptText="Nome do resíduo" style="-fx-background-radius: 7; -fx-border-radius: 7;">
+         <effect>
+            <InnerShadow color="#6f6c6b" />
+         </effect></TextField>
+      <RadioButton fx:id="rbMetal" layoutX="206.0" layoutY="79.0" mnemonicParsing="false" text="Metal">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="12.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="rbVidro" layoutX="206.0" layoutY="108.0" mnemonicParsing="false" text="Vidro">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbReciclavel" layoutX="206.0" layoutY="141.0" mnemonicParsing="false" text="Reciclavel">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbOrganico" layoutX="206.0" layoutY="174.0" mnemonicParsing="false" text="Orgãnico">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbNuclear" layoutX="206.0" layoutY="204.0" mnemonicParsing="false" text="Nuclear">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbPlastico" layoutX="206.0" layoutY="232.0" mnemonicParsing="false" text="Plastico">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbHospitalar" layoutX="206.0" layoutY="264.0" mnemonicParsing="false" text="Hospitalar">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="12.0" />
+         </font>
+      </RadioButton>
+      <ComboBox fx:id="cbFornecedor" layoutX="21.0" layoutY="208.0" prefWidth="150.0" promptText="Fornecedor" style="-fx-border-radius: 4; fx-background-radius: 4;">
+         <effect>
+            <InnerShadow color="#6f6c6b" />
+         </effect></ComboBox>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

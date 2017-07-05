@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="340.0" prefWidth="350.0" style="-fx-background-color: #fffbf8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaADMController">
+   <children>
+      <ImageView fitHeight="351.0" fitWidth="343.0" layoutX="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/Atualizado/abstratocinza.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="124.0" fitWidth="127.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/TheearTH.jpg" />
+         </image>
+      </ImageView>
+      <Accordion />
+      <Accordion layoutY="49.0" />
+      <Separator layoutY="46.0" prefHeight="0.0" prefWidth="384.0">
+         <effect>
+            <InnerShadow color="#3b6e72" />
+         </effect>
+      </Separator>
+      <Text layoutX="90.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administração">
+         <font>
+            <Font name="Bank Gothic Light BT" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.1" color="#36636b" radius="4.75" width="0.0" />
+         </effect>
+      </Text>
+      <MenuButton layoutX="31.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-radius: 7;" text="            Controle">
+        <items>
+          <MenuItem fx:id="miFuncionario" mnemonicParsing="false" text="Funcionario" />
+          <MenuItem fx:id="miFornecedor" mnemonicParsing="false" text="Fornecedor" />
+            <MenuItem fx:id="miResiduos" mnemonicParsing="false" text="Residuos" />
+            <MenuItem fx:id="miTransportadora" mnemonicParsing="false" text="Transportadora" />
+        </items>
+         <effect>
+            <InnerShadow color="#576e86" />
+         </effect>
+      </MenuButton>
+      <Button fx:id="btnInfo" layoutX="349.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" text="?">
+         <effect>
+            <InnerShadow color="#576e86" />
+         </effect></Button>
+      <ImageView fitHeight="105.0" fitWidth="108.0" layoutX="211.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/Atualizado/perfil.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="42.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bem vindo">
+         <font>
+            <Font name="Bell MT" size="19.0" />
+         </font>
+      </Text>
+      <MenuButton layoutX="31.0" layoutY="137.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-radius: 7;" text="           Cadastro">
+        <items>
+          <MenuItem fx:id="cadContas" mnemonicParsing="false" text="Contas" />
+          <MenuItem fx:id="cadFornecedor" mnemonicParsing="false" text="Fornecedor" />
+            <MenuItem fx:id="cadTransportadora" mnemonicParsing="false" text="Transportadora" />
+            <MenuItem fx:id="cadResiduo" mnemonicParsing="false" text="Residuo" />
+        </items>
+         <effect>
+            <InnerShadow color="#576e86" />
+         </effect>
+      </MenuButton>
+      <Text layoutX="48.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TheearTH" wrappingWidth="124.0">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="21.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6047619047619047" startY="0.3476190476190476">
+               <stops>
+                  <Stop color="#3f4e6b" />
+                  <Stop color="#2ad36b" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Label layoutX="149.0" layoutY="244.0" prefHeight="29.0" prefWidth="124.0">
+         <font>
+            <Font name="Bell MT" size="19.0" />
+         </font>
+      </Label>
+      <Separator layoutX="42.0" layoutY="274.0" prefHeight="10.0" prefWidth="186.0" style="-fx-background-color: #69a1ab;" />
+      <Separator layoutX="337.0" orientation="VERTICAL" prefHeight="342.0" prefWidth="0.0" style="-fx-background-color: #3b6e72;" />
+      <Button layoutX="264.0" layoutY="268.0" mnemonicParsing="false" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #dcdcdc;" text="Logout" textFill="WHITE">
+         <effect>
+            <InnerShadow color="WHITE" />
+         </effect>
+      </Button>
+      <Button layoutX="31.0" layoutY="178.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-radius: 7;" text="Relatório">
+         <effect>
+            <InnerShadow color="#576e86" />
+         </effect>
+      </Button>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

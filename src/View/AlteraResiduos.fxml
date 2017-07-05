@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="382.0" prefWidth="309.0" style="-fx-background-color: #FFFBF8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AlteraResíduosController">
+   <children>
+      <ImageView fitHeight="312.0" fitWidth="313.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/abstratocinza.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="7.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/TheearTH.jpg" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="cmbLixo" layoutX="78.0" layoutY="132.0" prefHeight="25.0" prefWidth="145.0" promptText="Tipo do lixo">
+         <effect>
+            <InnerShadow color="#12275b" />
+         </effect></ComboBox>
+      <TextField fx:id="tfQuantidade" layoutX="78.0" layoutY="174.0" prefHeight="25.0" prefWidth="145.0" promptText="Qtd. em toneladas">
+         <effect>
+            <InnerShadow color="#12275b" />
+         </effect></TextField>
+      <TextField fx:id="tfIDLixo" layoutX="78.0" layoutY="217.0" prefHeight="25.0" prefWidth="145.0" promptText="Código do Residuo">
+         <effect>
+            <InnerShadow color="#12275b" />
+         </effect></TextField>
+      <Text layoutX="68.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ResíduoS" wrappingWidth="165.0">
+         <effect>
+            <InnerShadow color="#2c61a1" />
+         </effect>
+         <font>
+            <Font name="Bank Gothic Medium BT" size="31.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnConfirmar" layoutX="107.0" layoutY="285.0" mnemonicParsing="false" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #dcdcdc;" text="Confirmar" textFill="WHITE">
+         <effect>
+            <InnerShadow color="#abaaaa" />
+         </effect>
+      </Button>
+      <Separator layoutY="43.0" prefHeight="7.0" prefWidth="312.0">
+         <effect>
+            <InnerShadow color="#297378" />
+         </effect>
+      </Separator>
+      <Separator layoutX="272.0" orientation="VERTICAL" prefHeight="385.0" prefWidth="0.0" style="-fx-background-color: #297378;" />
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

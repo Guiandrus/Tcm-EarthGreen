@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="395.0" prefWidth="593.0" style="-fx-background-color: #FFFBF8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GraficoLinhaController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="9.0" layoutY="246.0" opacity="0.17" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/TheearTH.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="392.0" fitWidth="406.0" layoutX="200.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/abstratocinza.jpg" />
+         </image>
+      </ImageView>
+      <LineChart fx:id="IDGraficoLinha" layoutY="69.0" prefHeight="331.0" prefWidth="418.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Text layoutX="95.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Armazenamento de ResíduoS" wrappingWidth="404.0">
+         <effect>
+            <InnerShadow color="#2c61a1" />
+         </effect>
+         <font>
+            <Font name="Bank Gothic Medium BT" size="25.0" />
+         </font>
+      </Text>
+      <Separator layoutX="406.0" layoutY="58.0" prefHeight="4.0" prefWidth="132.0">
+         <effect>
+            <InnerShadow color="#3b6e72" />
+         </effect>
+      </Separator>
+      <Separator layoutX="505.0" layoutY="23.0" opacity="0.86" orientation="VERTICAL" prefHeight="65.0" prefWidth="0.0" style="-fx-background-color: #3b6e72; -fx-background-radius: 7; -fx-border-radius: 7;" />
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

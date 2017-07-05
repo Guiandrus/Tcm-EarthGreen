@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="325.0" prefWidth="380.0" style="-fx-background-color: #fffbf8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaFuncionarioController">
+   <children>
+      <ImageView fitHeight="349.0" fitWidth="341.0" layoutX="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/abstratocinza.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="95.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionarios" wrappingWidth="200.0">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="26.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#2c61a1" />
+         </effect>
+      </Text>
+      <MenuButton fx:id="comboFornecedor" layoutX="29.0" layoutY="84.0" mnemonicParsing="false" text="Fornecedor">
+        <items>
+          <MenuItem fx:id="miCadastrarFornecedor" mnemonicParsing="false" text="Cadastrar" />
+            <MenuItem fx:id="miListarFornecedor" mnemonicParsing="false" text="Listagem" />
+        </items>
+         <effect>
+            <InnerShadow color="#6f6c6b" />
+         </effect>
+      </MenuButton>
+      <MenuButton fx:id="comboResiduos" layoutX="150.0" layoutY="84.0" mnemonicParsing="false" text="Resíduos">
+         <items>
+            <MenuItem fx:id="miCadastrarResiduos" mnemonicParsing="false" text="Cadastrar" />
+            <MenuItem fx:id="miListagemResiduos" mnemonicParsing="false" text="Listagem" />
+         </items>
+         <effect>
+            <InnerShadow color="#6f6c6b" />
+         </effect>
+      </MenuButton>
+      <MenuButton fx:id="comboRecebimento" layoutX="250.0" layoutY="84.0" mnemonicParsing="false" text="Recebimento">
+         <items>
+            <MenuItem fx:id="miCadastrarRecebimento" mnemonicParsing="false" text="Cadastrar" />
+            <MenuItem fx:id="miListagemRecebimento" mnemonicParsing="false" text="Listagem" />
+         </items>
+         <effect>
+            <InnerShadow color="#6f6c6b" />
+         </effect>
+      </MenuButton>
+      <Button fx:id="btnLogout" layoutX="163.0" layoutY="256.0" mnemonicParsing="false" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7;" text="Logout" textFill="WHITE">
+         <effect>
+            <InnerShadow color="WHITE" />
+         </effect>
+      </Button>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="340.0" prefWidth="350.0" style="-fx-background-color: #fffbf8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaADMController">
+   <children>
+      <ImageView fitHeight="351.0" fitWidth="343.0" layoutX="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/abstratocinza.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b7bfc6" height="132.0" layoutX="26.0" layoutY="84.0" opacity="0.18" stroke="BLACK" strokeType="INSIDE" width="152.0" />
+      <Accordion />
+      <Accordion layoutY="49.0" />
+      <Text layoutX="55.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administração">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="29.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.1" color="#36636b" radius="4.75" width="0.0" />
+         </effect>
+      </Text>
+      <MenuButton layoutX="31.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-radius: 4; -fx-border-radius: 4;" text="            Controle">
+        <items>
+          <MenuItem fx:id="miFuncionario" mnemonicParsing="false" text="Funcionario" />
+          <MenuItem fx:id="miFornecedor" mnemonicParsing="false" text="Fornecedor" />
+            <MenuItem fx:id="miResiduos" mnemonicParsing="false" text="Residuos" />
+            <MenuItem fx:id="miTransportadora" mnemonicParsing="false" text="Transportadora" />
+            <MenuItem fx:id="miMostraPedido" mnemonicParsing="false" text="Pedidos" />
+        </items>
+         <effect>
+            <InnerShadow color="#6f6c6b" />
+         </effect>
+      </MenuButton>
+      <Button fx:id="btnInfo" layoutX="332.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" style="-fx-background-color: #fffbf8;" text="?">
+         <effect>
+            <InnerShadow color="#6f6c6b" />
+         </effect></Button>
+      <ImageView fx:id="imagem" fitHeight="105.0" fitWidth="108.0" layoutX="211.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/profile-group-icon_34379.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="42.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bem vindo">
+         <font>
+            <Font name="Bell MT" size="19.0" />
+         </font>
+      </Text>
+      <MenuButton layoutX="31.0" layoutY="137.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-radius: 4; -fx-border-radius: 4;" text="           Cadastro">
+        <items>
+          <MenuItem fx:id="cadContas" mnemonicParsing="false" text="Contas" />
+          <MenuItem fx:id="cadFornecedor" mnemonicParsing="false" text="Fornecedor" />
+            <MenuItem fx:id="cadTransportadora" mnemonicParsing="false" text="Transportadora" />
+            <MenuItem fx:id="cadResiduo" mnemonicParsing="false" text="Residuo" />
+            <MenuItem fx:id="miCadastraPedido" mnemonicParsing="false" text="Pedido" />
+        </items>
+         <effect>
+            <InnerShadow color="#6f6c6b" />
+         </effect>
+      </MenuButton>
+      <Label fx:id="lbNome" layoutX="149.0" layoutY="244.0" prefHeight="29.0" prefWidth="124.0" text="Nome">
+         <font>
+            <Font name="Bell MT" size="19.0" />
+         </font>
+      </Label>
+      <Separator layoutX="42.0" layoutY="274.0" opacity="0.7" prefHeight="10.0" prefWidth="186.0" style="-fx-background-color: #1d2845; -fx-background-radius: 4; -fx-border-radius: 4;" />
+      <Button fx:id="btnLogout" layoutX="269.0" layoutY="267.0" mnemonicParsing="false" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7;" text="Logout" textFill="WHITE">
+         <effect>
+            <InnerShadow color="WHITE" />
+         </effect>
+      </Button>
+      <Button fx:id="btnRelatorio" layoutX="31.0" layoutY="178.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-radius: 4; -fx-border-radius: 4;" text="Relatório">
+         <effect>
+            <InnerShadow color="#a1918b" />
+         </effect>
+      </Button>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

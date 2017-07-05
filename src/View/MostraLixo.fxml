@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="386.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MostraLixoController">
+   <children>
+      <ImageView fitHeight="442.0" fitWidth="783.0" layoutX="-24.0" layoutY="-30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/Imagem%20Louca.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tabela" layoutX="139.0" layoutY="60.0" prefHeight="325.0" prefWidth="543.0" style="-fx-border-color: #6f6c6b;">
+        <columns>
+          <TableColumn fx:id="tcIID" prefWidth="111.0" text="Nome" />
+            <TableColumn fx:id="tcTipoLixo" prefWidth="212.0" text="Tipo do Lixo" />
+            <TableColumn fx:id="tcQtdLixo" prefWidth="238.0" text="Qtd. Lixo" />
+        </columns>
+         <effect>
+            <InnerShadow color="#6f6c6b" />
+         </effect>
+      </TableView>
+      <Button fx:id="btnAtualizar" layoutX="45.0" layoutY="119.0" mnemonicParsing="false" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #dcdcdc;" text="Atualizar" textFill="WHITE" />
+      <Button fx:id="btnEditar" layoutX="45.0" layoutY="177.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="65.0" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #dcdcdc;" text="Editar" textFill="WHITE" />
+      <Button fx:id="btnExcluir" layoutX="45.0" layoutY="233.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="65.0" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #dcdcdc;" text="Excluir" textFill="WHITE" />
+      <Label layoutX="321.0" layoutY="14.0" text="Resíduos">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="35.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.5714285714285714" endY="1.0" startX="0.3904761904761905">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#002bff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="109.0" fitWidth="124.0" layoutX="143.0" layoutY="273.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/TheearTH.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfPesquisa" layoutX="539.0" layoutY="27.0" prefHeight="25.0" prefWidth="104.0" promptText="Pesquisar...">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Button fx:id="btnIr" layoutX="649.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #dcdcdc;" text="Ir" textFill="WHITE" />
+   </children>
+</AnchorPane>

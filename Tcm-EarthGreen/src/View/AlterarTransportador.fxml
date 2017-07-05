@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="398.0" prefWidth="319.0" style="-fx-background-color: #fffbf8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AlterarTransportadorController">
+   <children>
+      <ImageView fitHeight="398.0" fitWidth="319.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/Atualizado/abstratocinza.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="118.0" fitWidth="128.0" layoutY="-1.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/Atualizado/TheearTH.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transportadora">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="27.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#1d2845" />
+         </effect>
+      </Text>
+      <TextField fx:id="tfNomeTransportadora" layoutX="72.0" layoutY="100.0" promptText="Nome da Transportadora">
+         <effect>
+            <InnerShadow color="#3a5478" />
+         </effect></TextField>
+      <TextField fx:id="tfContato" layoutX="72.0" layoutY="142.0" promptText="Contato">
+         <effect>
+            <InnerShadow color="#3a5478" />
+         </effect></TextField>
+      <TextField fx:id="tfCnpj" layoutX="72.0" layoutY="187.0" promptText="Cnpj da Empresa">
+         <effect>
+            <InnerShadow color="#3a5478" />
+         </effect></TextField>
+      <ComboBox fx:id="comboTipoMaterial" layoutX="72.0" layoutY="232.0" prefWidth="150.0" promptText="Tipo de Material">
+         <effect>
+            <InnerShadow color="#3a5478" />
+         </effect></ComboBox>
+      <Button fx:id="btnConfirmar" layoutX="112.0" layoutY="290.0" mnemonicParsing="false" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #dcdcdc;" text="Confirmar" textFill="WHITE">
+         <effect>
+            <InnerShadow color="WHITE" />
+         </effect></Button>
+      <Separator layoutY="56.0" prefHeight="2.0" prefWidth="319.0">
+         <effect>
+            <InnerShadow color="#297378" />
+         </effect>
+      </Separator>
+      <Separator layoutX="276.0" orientation="VERTICAL" prefHeight="398.0" prefWidth="4.0" style="-fx-background-color: #297378;" />
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

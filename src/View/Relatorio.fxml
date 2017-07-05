@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="342.0" prefWidth="400.0" style="-fx-background-color: #FFFBF8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RelatorioController">
+   <children>
+      <ImageView fitHeight="342.0" fitWidth="446.0" layoutX="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/abstratocinza.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutY="8.0" prefHeight="28.0" prefWidth="474.0" style="-fx-background-color: #FFFBF8; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-width: 1;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Gráficos">
+            <items>
+              <MenuItem fx:id="miPieChart" mnemonicParsing="false" text="Controle de Estoque" />
+                  <MenuItem fx:id="miLineChart" mnemonicParsing="false" text="Controle de Pedidos" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Relatorios">
+            <items>
+              <MenuItem fx:id="miGerarPDF" mnemonicParsing="false" text="Emitir PDF" />
+            </items>
+          </Menu>
+        </menus>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </MenuBar>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="29.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/TheearTH.jpg" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

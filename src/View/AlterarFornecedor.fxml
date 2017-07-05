@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="434.0" prefWidth="336.0" style="-fx-background-color: #FFFBF8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AlterarFornecedorController">
+   <children>
+      <ImageView fitHeight="338.0" fitWidth="342.0" layoutX="3.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/abstratocinza.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="191.0" fitWidth="185.0" layoutX="1.0" opacity="0.39" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/TheearTH.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfNomeEmpresa" layoutX="96.0" layoutY="138.0" prefHeight="25.0" prefWidth="149.0" promptText="Nome da Empresa">
+         <effect>
+            <InnerShadow color="#3a5478" />
+         </effect>
+      </TextField>
+      <TextField fx:id="tfTelefone" layoutX="96.0" layoutY="184.0" prefHeight="25.0" prefWidth="149.0" promptText="Digite o telefone">
+         <effect>
+            <InnerShadow color="#3a5478" />
+         </effect>
+      </TextField>
+      <TextField fx:id="tfEmail" layoutX="96.0" layoutY="232.0" prefHeight="25.0" prefWidth="149.0" promptText="Digite o Email">
+         <effect>
+            <InnerShadow color="#3a5478" />
+         </effect>
+      </TextField>
+      <TextField layoutX="96.0" layoutY="279.0" prefHeight="25.0" prefWidth="149.0" promptText="CNPJ">
+         <effect>
+            <InnerShadow color="#3a5478" />
+         </effect>
+      </TextField>
+      <Text layoutX="83.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FORNECEDOR" wrappingWidth="205.0">
+         <effect>
+            <InnerShadow color="#2c61a1" />
+         </effect>
+         <font>
+            <Font name="Bank Gothic Medium BT" size="25.0" />
+         </font>
+      </Text>
+      <Separator layoutX="299.0" orientation="VERTICAL" prefHeight="464.0" prefWidth="5.0" style="-fx-background-color: #297378;" />
+      <Separator layoutY="53.0" prefHeight="4.0" prefWidth="342.0">
+         <effect>
+            <InnerShadow color="#297378" />
+         </effect>
+      </Separator>
+      <Button fx:id="btnConfirmar" layoutX="135.0" layoutY="361.0" mnemonicParsing="false" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #dcdcdc;" text="Confirmar" textFill="WHITE">
+         <effect>
+            <InnerShadow color="#abaaaa" />
+         </effect>
+      </Button>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

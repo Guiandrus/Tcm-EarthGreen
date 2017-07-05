@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="355.0" prefWidth="363.0" style="-fx-background-color: #fffbf8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CadastroLixoController">
+   <children>
+      <ImageView fitHeight="371.0" fitWidth="363.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/Atualizado/abstratocinza.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="4.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/Atualizado/TheearTH.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="13.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CADASTRO DE RESÍDUOS" wrappingWidth="350.201171875">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="19.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#2c61a1" />
+         </effect>
+      </Text>
+      <TextField fx:id="tfQuantidade" layoutX="21.0" layoutY="162.0" prefHeight="25.0" prefWidth="150.0" promptText="Qtd. em toneladas" style="-fx-background-radius: 7; -fx-border-radius: 7;">
+         <effect>
+            <InnerShadow color="#3a5478" />
+         </effect></TextField>
+      <Button fx:id="btnCadastrar" layoutX="136.0" layoutY="298.0" mnemonicParsing="false" style="-fx-border-radius: 7; -fx-background-color: #1d2845; -fx-border-color: #dcdcdc; -fx-background-radius: 7;" text="Cadastrar" textFill="WHITE">
+         <effect>
+            <InnerShadow color="WHITE" />
+         </effect></Button>
+      <TextField fx:id="tfIDLixo" layoutX="21.0" layoutY="200.0" promptText="Código do Residuo" style="-fx-background-radius: 7; -fx-border-radius: 7;">
+         <effect>
+            <InnerShadow color="#3a5478" />
+         </effect></TextField>
+      <TextField layoutX="21.0" layoutY="124.0" promptText="Nome do resíduo" style="-fx-background-radius: 7; -fx-border-radius: 7;">
+         <effect>
+            <InnerShadow color="#3a5478" />
+         </effect></TextField>
+      <RadioButton layoutX="206.0" layoutY="79.0" mnemonicParsing="false" text="Metal">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="12.0" />
+         </font></RadioButton>
+      <Separator layoutY="55.0" prefHeight="5.0" prefWidth="363.0">
+         <effect>
+            <InnerShadow color="#297378" />
+         </effect>
+      </Separator>
+      <Separator layoutX="311.0" layoutY="1.0" orientation="VERTICAL" prefHeight="363.0" prefWidth="6.0" style="-fx-background-color: #297378;" />
+      <RadioButton layoutX="206.0" layoutY="108.0" mnemonicParsing="false" text="Vidro">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="206.0" layoutY="141.0" mnemonicParsing="false" text="Reciclavel">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="206.0" layoutY="174.0" mnemonicParsing="false" text="Orgãnico">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="206.0" layoutY="204.0" mnemonicParsing="false" text="Nuclear">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="206.0" layoutY="232.0" mnemonicParsing="false" text="Plastico">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="206.0" layoutY="264.0" mnemonicParsing="false" text="Hospitalar">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="12.0" />
+         </font>
+      </RadioButton>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

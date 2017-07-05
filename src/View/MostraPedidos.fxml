@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="438.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MostraPedidosController">
+   <children>
+      <ImageView fitHeight="439.0" fitWidth="759.0" layoutX="-40.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/Imagem%20Louca.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tabela" layoutX="143.0" layoutY="60.0" prefHeight="343.0" prefWidth="576.0" style="-fx-border-color: black; -fx-border-width: 2;">
+        <columns>
+          <TableColumn fx:id="tvFornecedor" prefWidth="138.0" text="Fornecedor" />
+          <TableColumn fx:id="tvTransportadora" prefWidth="149.0" text="Transportadora" />
+            <TableColumn fx:id="tvTipo" prefWidth="166.0" text="Tipo do Resíduo" />
+            <TableColumn fx:id="tvData" prefWidth="118.0" text="Data" />
+        </columns>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TableView>
+      <DatePicker fx:id="dateData" layoutX="488.0" layoutY="23.0" prefHeight="25.0" prefWidth="153.0" promptText="Data do Pedido" style="-fx-border-color: black; -fx-border-width: 2;">
+         <effect>
+            <InnerShadow />
+         </effect></DatePicker>
+      <Label layoutX="295.0" layoutY="19.0" text="PedidoS">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="31.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.5714285714285714" endY="1.0" startX="0.3904761904761905">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#002bff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="btnAtualizar" layoutX="33.0" layoutY="180.0" mnemonicParsing="false" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #dcdcdc;" text="Atualizar" textFill="WHITE" />
+      <Button fx:id="btnExcluir" layoutX="33.0" layoutY="255.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="65.0" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #dcdcdc;" text="Cancelar" textFill="WHITE" />
+      <Button fx:id="btnPesquisar" layoutX="641.0" layoutY="23.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="35.0" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #dcdcdc;" text="OK" textFill="WHITE" />
+   </children>
+</AnchorPane>

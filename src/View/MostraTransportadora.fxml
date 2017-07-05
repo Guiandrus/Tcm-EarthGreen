@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="394.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MostraTranportadoraController">
+   <children>
+      <ImageView fitHeight="394.0" fitWidth="720.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/Imagem%20Louca.jpg" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <TableView fx:id="tabela" layoutX="110.0" layoutY="75.0" prefHeight="292.0" prefWidth="537.0" style="-fx-border-color: #6f6c6b; -fx-border-width: 1;">
+        <columns>
+          <TableColumn fx:id="tvNome" prefWidth="105.0" text="Nome" />
+          <TableColumn fx:id="tvContato" minWidth="0.0" prefWidth="135.0" text="Contato" />
+            <TableColumn fx:id="tvCnpj" minWidth="0.0" prefWidth="139.0" text="CNPJ" />
+            <TableColumn fx:id="tvMaterial" minWidth="0.0" prefWidth="156.0" text="Material" />
+        </columns>
+         <effect>
+            <InnerShadow color="#6f6c6b" />
+         </effect>
+      </TableView>
+      <Button fx:id="btnAtualizar" layoutX="23.0" layoutY="141.0" mnemonicParsing="false" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #dcdcdc;" text="Atualizar" textFill="WHITE" />
+      <Button fx:id="btnEditar" layoutX="23.0" layoutY="184.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="65.0" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #dcdcdc;" text="Editar" textFill="WHITE" />
+      <Button fx:id="btnExcluir" layoutX="23.0" layoutY="232.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="65.0" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #dcdcdc;" text="Excluir" textFill="WHITE" />
+      <Label layoutX="219.0" layoutY="23.0" text="Transportadoras">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="31.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.5714285714285714" endY="1.0" startX="0.3904761904761905">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#002bff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="118.0" fitWidth="120.0" layoutX="115.0" layoutY="245.0" opacity="0.18" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/TheearTH.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfPesquisa" layoutX="499.0" layoutY="34.0" prefHeight="25.0" prefWidth="104.0" promptText="Pesquisar...">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Button fx:id="btnIr" layoutX="614.0" layoutY="33.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #dcdcdc;" text="Ir" textFill="WHITE" />
+   </children>
+</AnchorPane>

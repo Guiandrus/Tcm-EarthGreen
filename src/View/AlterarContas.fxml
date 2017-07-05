@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="339.0" prefWidth="383.0" style="-fx-background-color: #fffbf8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AlterarContasController">
+   <children>
+      <ImageView fitHeight="339.0" fitWidth="377.0" layoutX="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/abstratocinza.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="137.0" fitWidth="142.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/TheearTH.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="103.0" layoutY="14.0" prefHeight="23.0" prefWidth="177.0" text="Alteração">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="27.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#2c61a1" />
+         </effect>
+      </Label>
+      <TextField fx:id="tfNome" layoutX="105.0" layoutY="98.0" promptText="Nome">
+         <effect>
+            <InnerShadow color="#12275b" />
+         </effect></TextField>
+      <TextField fx:id="tfEmail" layoutX="105.0" layoutY="145.0" promptText="Email">
+         <effect>
+            <InnerShadow color="#12275b" />
+         </effect></TextField>
+      <TextField fx:id="tfSenha" layoutX="105.0" layoutY="191.0" promptText="Senha">
+         <effect>
+            <InnerShadow color="#12275b" />
+         </effect></TextField>
+      <Button fx:id="btnAlterar" layoutX="154.0" layoutY="245.0" mnemonicParsing="false" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #dcdcdc;" text="Alterar" textFill="WHITE">
+         <effect>
+            <InnerShadow color="WHITE" />
+         </effect></Button>
+      <Separator layoutY="53.0" prefHeight="0.0" prefWidth="383.0">
+         <effect>
+            <InnerShadow color="#297378" />
+         </effect>
+      </Separator>
+      <Separator layoutX="333.0" orientation="VERTICAL" prefHeight="339.0" prefWidth="5.0" style="-fx-background-color: #297378;" />
+   </children>
+</AnchorPane>
