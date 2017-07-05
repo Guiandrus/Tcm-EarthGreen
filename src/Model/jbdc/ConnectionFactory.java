@@ -16,7 +16,7 @@ public class ConnectionFactory {
 
     private String bancoDeDados = "TCM";
     private String usuario = "postgres";
-    private String senha = "24030012";
+    private String senha = "aluno";
     
     public static void main(String[] args) {
         ConnectionFactory con = new ConnectionFactory();

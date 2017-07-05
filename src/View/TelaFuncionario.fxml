@@ -9,14 +9,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="325.0" prefWidth="380.0" style="-fx-background-color: #fffbf8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaFuncionarioController">
+<AnchorPane id="AnchorPane" prefHeight="341.0" prefWidth="473.0" style="-fx-background-color: #fffbf8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaFuncionarioController">
    <children>
-      <ImageView fitHeight="349.0" fitWidth="341.0" layoutX="49.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="349.0" fitWidth="341.0" layoutX="131.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Imagens/abstratocinza.jpg" />
          </image>
       </ImageView>
-      <Text layoutX="95.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionarios" wrappingWidth="200.0">
+      <Text layoutX="171.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionarios" wrappingWidth="200.0">
          <font>
             <Font name="Bank Gothic Medium BT" size="26.0" />
          </font>
@@ -33,7 +33,7 @@
             <InnerShadow color="#6f6c6b" />
          </effect>
       </MenuButton>
-      <MenuButton fx:id="comboResiduos" layoutX="150.0" layoutY="84.0" mnemonicParsing="false" text="Resíduos">
+      <MenuButton fx:id="comboResiduos" layoutX="131.0" layoutY="84.0" mnemonicParsing="false" text="Resíduos">
          <items>
             <MenuItem fx:id="miCadastrarResiduos" mnemonicParsing="false" text="Cadastrar" />
             <MenuItem fx:id="miListagemResiduos" mnemonicParsing="false" text="Listagem" />
@@ -42,7 +42,7 @@
             <InnerShadow color="#6f6c6b" />
          </effect>
       </MenuButton>
-      <MenuButton fx:id="comboRecebimento" layoutX="250.0" layoutY="84.0" mnemonicParsing="false" text="Recebimento">
+      <MenuButton fx:id="comboRecebimento" layoutX="220.0" layoutY="84.0" mnemonicParsing="false" text="Recebimento">
          <items>
             <MenuItem fx:id="miCadastrarRecebimento" mnemonicParsing="false" text="Cadastrar" />
             <MenuItem fx:id="miListagemRecebimento" mnemonicParsing="false" text="Listagem" />
@@ -51,11 +51,20 @@
             <InnerShadow color="#6f6c6b" />
          </effect>
       </MenuButton>
-      <Button fx:id="btnLogout" layoutX="163.0" layoutY="256.0" mnemonicParsing="false" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7;" text="Logout" textFill="WHITE">
+      <Button fx:id="btnLogout" layoutX="244.0" layoutY="258.0" mnemonicParsing="false" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7;" text="Logout" textFill="WHITE">
          <effect>
             <InnerShadow color="WHITE" />
          </effect>
       </Button>
+      <MenuButton fx:id="comboFornecedor1" layoutX="330.0" layoutY="84.0" mnemonicParsing="false" text="Transportadora">
+         <effect>
+            <InnerShadow color="#6f6c6b" />
+         </effect>
+         <items>
+            <MenuItem fx:id="miCadastrarTransportador" mnemonicParsing="false" text="Cadastrar" />
+            <MenuItem fx:id="miListarTransportador" mnemonicParsing="false" text="Listagem" />
+         </items>
+      </MenuButton>
    </children>
    <effect>
       <InnerShadow />

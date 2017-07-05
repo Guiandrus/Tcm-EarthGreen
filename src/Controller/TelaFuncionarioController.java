@@ -24,22 +24,40 @@ public class TelaFuncionarioController implements Initializable {
 
     
     @FXML
-    private MenuItem miCadastrarFornecedor;
+    private MenuItem miListagemRecebimento;
 
     @FXML
-    private MenuItem miListagemRecebimento;
+    private Button btnLogout;
+
+    @FXML
+    private MenuButton comboResiduos;
+
+    @FXML
+    private MenuItem miCadastrarResiduos;
+
+    @FXML
+    private MenuItem miCadastrarFornecedor;
 
     @FXML
     private MenuItem miListagemResiduos;
 
     @FXML
-    private Button btnLogout;
-    
+    private MenuButton comboRecebimento;
+
+    @FXML
+    private MenuButton comboFornecedor1;
+
+    @FXML
+    private MenuButton comboFornecedor;
+
     @FXML
     private MenuItem miCadastrarRecebimento;
 
     @FXML
-    private MenuItem miCadastrarResiduos;
+    private MenuItem miCadastrarTransportador;
+
+    @FXML
+    private MenuItem miListarTransportador;
 
     @FXML
     private MenuItem miListarFornecedor;
@@ -62,6 +80,15 @@ public class TelaFuncionarioController implements Initializable {
         });
         miListagemResiduos.setOnAction(event ->{
         tcm.abreTela("MostraLixo");
+        });
+        miListagemRecebimento.setOnAction(event ->{
+        tcm.abreTela("MostraPedidos");
+        });
+        miCadastrarTransportador.setOnAction(event ->{
+        tcm.abreTela("CadastraTransportador");
+        });
+        miListarTransportador.setOnAction(event ->{
+        tcm.abreTela("MostraTransportadora");
         });
         btnLogout.setOnMouseClicked(event ->{
              Stage stage = (Stage) btnLogout.getScene().getWindow();

@@ -16,7 +16,7 @@
             <Image url="@../Imagens/abstratocinza.jpg" />
          </image>
       </ImageView>
-      <Text layoutX="48.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   Cadastro de Transportadora" wrappingWidth="328.6708984375">
+      <Text layoutX="95.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   Cadastro de Transportadora" wrappingWidth="328.6708984375">
          <font>
             <Font name="Bank Gothic Medium BT" size="21.0" />
          </font>
@@ -24,33 +24,27 @@
             <InnerShadow color="#2c61a1" />
          </effect>
       </Text>
-      <TextField fx:id="tfNomeTransportadora" layoutX="115.0" layoutY="107.0" promptText="Nome da Transportadora">
+      <TextField fx:id="tfNomeTransportadora" layoutX="121.0" layoutY="107.0" promptText="Nome da Transportadora">
          <effect>
-            <InnerShadow color="#3a5478" />
+            <InnerShadow color="#6f6c6b" />
          </effect></TextField>
-      <TextField fx:id="tfCnpj" layoutX="115.0" layoutY="188.0" promptText="Cnpj da Empresa">
+      <TextField fx:id="tfCnpj" layoutX="121.0" layoutY="188.0" promptText="Cnpj da Empresa">
          <effect>
-            <InnerShadow color="#3a5478" />
+            <InnerShadow color="#6f6c6b" />
          </effect></TextField>
-      <ComboBox fx:id="comboTipoMaterial" layoutX="114.0" layoutY="229.0" prefWidth="150.0" promptText="Tipo de Material">
+      <ComboBox fx:id="comboTipoMaterial" layoutX="121.0" layoutY="229.0" prefWidth="150.0" promptText="Tipo de Material">
          <effect>
-            <InnerShadow color="#3a5478" />
+            <InnerShadow color="#6f6c6b" />
          </effect></ComboBox>
-      <Button fx:id="btnCadastrar" layoutX="155.0" layoutY="287.0" mnemonicParsing="false" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #dcdcdc;" text="Cadastrar" textFill="WHITE">
+      <Button fx:id="btnCadastrar" layoutX="162.0" layoutY="288.0" mnemonicParsing="false" style="-fx-background-color: #1d2845; -fx-background-radius: 7; -fx-border-radius: 7;" text="Cadastrar" textFill="WHITE">
          <effect>
             <InnerShadow color="WHITE" />
          </effect></Button>
-      <TextField fx:id="tfContato" layoutX="115.0" layoutY="147.0" promptText="Contato">
+      <TextField fx:id="tfContato" layoutX="121.0" layoutY="146.0" promptText="Contato">
          <effect>
-            <InnerShadow color="#3a5478" />
+            <InnerShadow color="#6f6c6b" />
          </effect></TextField>
-      <Separator layoutY="64.0" prefHeight="7.0" prefWidth="424.0">
-         <effect>
-            <InnerShadow color="#297378" />
-         </effect>
-      </Separator>
       <Separator layoutX="382.0" orientation="VERTICAL" prefHeight="200.0" />
-      <Separator layoutX="376.0" orientation="VERTICAL" prefHeight="357.0" prefWidth="0.0" style="-fx-background-color: #297378;" />
    </children>
    <effect>
       <InnerShadow />

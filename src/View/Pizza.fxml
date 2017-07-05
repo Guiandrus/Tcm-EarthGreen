@@ -27,7 +27,7 @@
             <InnerShadow />
          </effect>
       </PieChart>
-      <Text layoutX="159.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="                Estoque" wrappingWidth="322.0">
+      <Text layoutX="235.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="                Estoque" wrappingWidth="169.0">
          <effect>
             <InnerShadow color="#2c61a1" />
          </effect>

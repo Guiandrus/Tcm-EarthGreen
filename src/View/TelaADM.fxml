@@ -18,7 +18,7 @@
             <Image url="@../Imagens/abstratocinza.jpg" />
          </image>
       </ImageView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b7bfc6" height="132.0" layoutX="26.0" layoutY="84.0" opacity="0.18" stroke="BLACK" strokeType="INSIDE" width="152.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b7bfc6" height="37.0" layoutX="26.0" layoutY="82.0" opacity="0.18" stroke="BLACK" strokeType="INSIDE" width="152.0" />
       <Accordion />
       <Accordion layoutY="49.0" />
       <Text layoutX="55.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administração">
@@ -29,7 +29,7 @@
             <InnerShadow choke="0.1" color="#36636b" radius="4.75" width="0.0" />
          </effect>
       </Text>
-      <MenuButton layoutX="31.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-radius: 4; -fx-border-radius: 4;" text="            Controle">
+      <MenuButton layoutX="32.0" layoutY="88.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-radius: 4; -fx-background-color: transparente; -fx-border-radius: 4;" text="            Controle">
         <items>
           <MenuItem fx:id="miFuncionario" mnemonicParsing="false" text="Funcionario" />
           <MenuItem fx:id="miFornecedor" mnemonicParsing="false" text="Fornecedor" />
@@ -55,7 +55,8 @@
             <Font name="Bell MT" size="19.0" />
          </font>
       </Text>
-      <MenuButton layoutX="31.0" layoutY="137.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-radius: 4; -fx-border-radius: 4;" text="           Cadastro">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b7bfc6" height="37.0" layoutX="27.0" layoutY="125.0" opacity="0.18" stroke="BLACK" strokeType="INSIDE" width="152.0" />
+      <MenuButton layoutX="32.0" layoutY="131.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-radius: 4; -fx-background-color: transparente; -fx-border-radius: 4;" text="           Cadastro">
         <items>
           <MenuItem fx:id="cadContas" mnemonicParsing="false" text="Contas" />
           <MenuItem fx:id="cadFornecedor" mnemonicParsing="false" text="Fornecedor" />
@@ -78,10 +79,14 @@
             <InnerShadow color="WHITE" />
          </effect>
       </Button>
-      <Button fx:id="btnRelatorio" layoutX="31.0" layoutY="178.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-radius: 4; -fx-border-radius: 4;" text="Relatório">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b7bfc6" height="37.0" layoutX="27.0" layoutY="172.0" opacity="0.18" stroke="BLACK" strokeType="INSIDE" width="152.0" />
+      <Button fx:id="btnRelatorio" layoutX="31.0" layoutY="178.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" style="-fx-background-radius: 4; -fx-background-color: transparente; -fx-border-radius: 4;" text="Relatório">
          <effect>
             <InnerShadow color="#a1918b" />
          </effect>
+         <font>
+            <Font name="Bank Gothic Medium BT" size="12.0" />
+         </font>
       </Button>
    </children>
    <effect>

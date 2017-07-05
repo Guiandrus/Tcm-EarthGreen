@@ -1,4 +1,4 @@
-package model;
+package View.manage;
 
 import Model.DAO.ContaDAO;
 import Model.DAO.FornecedorDAO;
@@ -35,7 +35,7 @@ public class PDF {
         Document documento = new Document();
         
         try {
-            PdfWriter.getInstance(documento, new FileOutputStream("C:\\Users\\Guilherme\\Desktop\\Cadastros.pdf"));
+            PdfWriter.getInstance(documento, new FileOutputStream("C:\\Users\\Aluno\\Desktop\\Cadastros.pdf"));
             documento.open();
             
             
